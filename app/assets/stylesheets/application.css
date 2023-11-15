@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+/* Style pour la liste des restaurants */
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+
+/* Style pour chaque élément de la liste (restaurant) */
+.restaurant-item {
+  width: calc(33.33% - 20px); /* 33.33% de largeur avec 20px d'espace entre les éléments */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Assurez-vous d'ajuster la largeur, les marges et les couleurs selon vos besoins */

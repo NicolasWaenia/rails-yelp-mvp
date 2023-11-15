@@ -1,0 +1,16 @@
+<div class="container">
+  <h1 class="text-center">All restaurants</h1>
+  <div class="row">
+    <% @restaurants.each do |restaurant|  %>
+      <div class="col-md-4">
+        <div class="list-group mb-4">
+          <a href="<%= restaurant_path(restaurant) %>" class="list-group-item list-group-item-action">
+            <h2 class="mb-1 text-success"><%= restaurant.name %></h2>
+            <p class="mb-1">Ville: <%= restaurant.address %></p>
+            <p class="mb-1">Category: <%= restaurant.category.upcase %></p>
+          </a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
